@@ -340,7 +340,6 @@ import SingleEditCell from './singleEditCell.vue'
 import ColumnSet from './ColumnSet.vue'
 import RenderCol from './renderCol.vue'
 import RenderHeader from './renderHeader.vue'
-import TTableColumn from './TTableColumn.vue'
 const props: any = defineProps({
   // table所需数据
   table: {

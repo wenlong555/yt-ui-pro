@@ -2,16 +2,16 @@
 
 ::: tip 提示
 
-@wocwin/t-ui-plus 基于 vue3 + ts + Element-plus 再次封装的基础组件
+yt-ui-pro 基于 vue3 + ts + Element-plus 再次封装的基础组件、提供业务组件、页面模版
 
 :::
 
 ### 安装
 
 ```bash:no-line-numbers
-npm install @wocwin/t-ui-plus -S
+npm install yt-ui-pro -S
 &
-pnpm add @wocwin/t-ui-plus -S
+pnpm add yt-ui-pro -S
 ```
 
 
@@ -20,29 +20,24 @@ pnpm add @wocwin/t-ui-plus -S
 
 ```js
 // main.ts
-import TuiPlus from '@wocwin/t-ui-plus'
-import '@wocwin/t-ui-plus/lib/style.css'
+import YTUI from 'yt-ui-pro'
+import 'y-ui-pro/lib/style.css'
 const app = createApp(App)
-app.use(TuiPlus)
+app.use(YTUI)
 app.mount('#app')
 ```
 
-### T-ui-plus组件 Volar 类型提示
+### YtUI Pro 组件 Volar 类型提示
 
 ```js
 // 需要在使用的项目的tsconfig.json文件中添加以下
 compilerOptions：{
   "types": [
-      "@wocwin/t-ui-plus/components.d.ts",
+      "yt-ui-plus/components.d.ts",
     ],
 }
 
 ```
-
-### 🔨  Vue3 + Vite项目中安装引入报如下错误的解决方法
-> #### 把项目的vite版本升级到4+
-
-<img src="../public/img/error.png">
 
 ### docs文档结构目录
 ```
@@ -77,14 +72,3 @@ compilerOptions：{
 - `docs`: 文档变动;
 - `test`: 补充缺失的测试用例或者修正现有的测试用例;
 - `revert`: 回滚操作;
-
-
-### vue2基础组件
-> 基于 vue2 + Element-ui 和 ant-design-vue 二次封装的基础组件
-******
-#### [Vue2 基础组件文档地址](https://wocwin.github.io/t-ui/)
-******
-#### [Vue2 基础组件码云地址](https://gitee.com/wocwin/t-ui)
-******
-#### [Vue2 基础组件GitHub地址](https://github.com/wocwin/t-ui)
-

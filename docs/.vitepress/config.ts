@@ -8,15 +8,39 @@ export default defineConfig({
   lastUpdated: true,
   themeConfig: {
     logo: '../../public/img/bank.png',
-    siteTitle: '雅拓科技',
+    siteTitle: '雅拓前端组件库',
     outline:[2,6],
     nav: [
+      {
+        text: '首页',
+        link: '/',
+      },
+      {
+        text: '设计规范',
+        link: '/components/design/index.md',
+      },
       {
         text: '安装指南',
         link: '/components/',
       },
-      { text: '基础组件', link: '/components/YTSelect/base.md' },
-    ],
+      { text: '前端组件', link: '/components/YTButton/base.md' },
+      {
+        text:"前端工具库",
+        items: [
+          {
+            text: '工具库',
+            link: '/components/tools/index.md',
+          },
+          {
+            text: '工具方法',
+            link: '/components/tools/utils.md',
+          },
+          {
+            text: '工具类',
+            link: '/components/tools/class.md',
+          }
+        ]
+      }],
     sidebar: {
       '/components': [
         {
@@ -59,7 +83,7 @@ export default defineConfig({
   },
   markdown: {
     headers: {
-      level: [0, 0],
+      level: [2, 6],
     },
     // light: #f9fafb, dark: --vp-code-block-bg
     theme: { light: 'github-light', dark: 'github-dark' },

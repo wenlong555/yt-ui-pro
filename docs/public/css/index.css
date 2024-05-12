@@ -60,12 +60,14 @@
 }
 .VPContent .VPDoc .container .content {
   padding: 0;
+  padding-left: 10px;
 }
 .VPNav {
   z-index: 41 !important;
 }
 .VPSidebar {
   z-index: 40 !important;
+  width: 140px;
 }
 .VPSidebar.open {
   z-index: 42 !important;
@@ -76,6 +78,12 @@
 .vp-doc ul, .vp-doc ol {
   padding-left: 0;
 }
+
+@media (min-width: 960px) {
+      .VPDoc {
+          padding: 16px 16px 0;
+      }
+  }
 
 /* pre{
   background: transparent;
