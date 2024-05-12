@@ -9,27 +9,27 @@
         <slot name="leftContent" />
       </div>
     </div>
-    <t-layout-page class="right_content" :style="pageStyle">
-      <t-layout-page-item class="table_search" :style="queryPageStyle">
-        <t-query-condition v-bind="$attrs" ref="TQueryConditionPage">
+    <yt-layout-page class="right_content" :style="pageStyle">
+      <yt-layout-page-item class="table_search" :style="queryPageStyle">
+        <yt-query-condition v-bind="$attrs" ref="TQueryConditionPage">
           <template v-for="(index, name) in slots" #[name]="data">
             <slot :name="name" v-bind="data" />
           </template>
-        </t-query-condition>
-      </t-layout-page-item>
-      <t-layout-page-item class="table_main" :style="tablePageStyle">
-        <t-table v-bind="$attrs" ref="TTablePage">
+        </yt-query-condition>
+      </yt-layout-page-item>
+      <yt-layout-page-item class="table_main" :style="tablePageStyle">
+        <yt-table v-bind="$attrs" ref="TTablePage">
           <template v-for="(index, name) in slots" #[name]="data">
             <slot :name="name" v-bind="data" />
           </template>
-        </t-table>
-      </t-layout-page-item>
+        </yt-table>
+      </yt-layout-page-item>
       <slot />
-    </t-layout-page>
+    </yt-layout-page>
   </div>
 </template>
 
-<script setup lang="ts" name="TAdaptivePage">
+<script setup lang="ts" name="YTAdaptivePage">
 import TLayoutPage from '../../layout-page/src/index.vue'
 import TLayoutPageItem from '../../layout-page-item/src/index.vue'
 import TTable from '../../table/src/index.vue'

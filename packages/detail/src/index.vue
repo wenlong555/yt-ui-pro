@@ -63,7 +63,7 @@
   </el-descriptions>
 </template>
 
-<script setup lang="ts" name="TDetail">
+<script setup lang="ts" name="YTDetail">
 import RenderTooltip from './renderTooltip.vue'
 const props = defineProps({
   descColumn: {

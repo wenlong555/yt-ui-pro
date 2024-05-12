@@ -6,7 +6,7 @@
 **代码示例：**
 
 ```html
-<t-query-condition :opts="conditionParams" @submit="conditionEnter" />
+<yt-query-condition :opts="conditionParams" @submit="conditionEnter" />
 ```
 
 ### 2. 配置参数（Attributes）

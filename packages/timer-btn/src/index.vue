@@ -12,7 +12,7 @@
   </div>
 </template>
 
-<script setup lang="ts" name="TTimerBtn">
+<script setup lang="ts" name="YTTimerBtn">
 import { computed, ref } from 'vue'
 const props = defineProps({
   second: {

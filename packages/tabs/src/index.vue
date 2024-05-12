@@ -21,7 +21,7 @@
     </el-tabs>
   </div>
 </template>
-<script setup lang="ts" name="TTabs">
+<script setup lang="ts" name="YTTabs">
 import { ref, useSlots } from 'vue'
 const props: any = defineProps({
   tabs: {

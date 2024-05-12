@@ -2,49 +2,49 @@ import type { Component, App } from 'vue'
 // import ElementPlus from 'element-plus'
 // import 'element-plus/dist/index.css'
 // import locale from 'element-plus/lib/locale/lang/zh-cn' // 因element-plus默认是英文，我们指定一下默认中文
-import TLayoutPage from './layout-page'
-import TLayoutPageItem from './layout-page-item'
-import TQueryCondition from './query-condition'
-import TTable from './table'
-import TForm from './form'
-import TSelect from './select'
-import TSelectTable from './select-table'
-import TDetail from './detail'
-import TButton from './button'
-import TStepWizard from './step-wizard'
-import TTimerBtn from './timer-btn'
-import TModuleForm from './module-form'
-import TAdaptivePage from './adaptive-page'
-import TDatePicker from './date-picker'
-import TRadio from './radio'
-import TCheckbox from './checkbox'
-import TChart from './chart'
-// import TMap from './map'
-import TTabs from './tabs'
+import YtLayoutPage from './layout-page'
+import YtLayoutPageItem from './layout-page-item'
+import YtQueryCondition from './query-condition'
+import YtTable from './table'
+import YtForm from './form'
+import YtSelect from './select'
+import YtSelectTable from './select-table'
+import YtDetail from './detail'
+import YtButton from './button'
+import YtStepWizard from './step-wizard'
+import YtTimerBtn from './timer-btn'
+import YtModuleForm from './module-form'
+import YtAdaptivePage from './adaptive-page'
+import YtDatePicker from './date-picker'
+import YtRadio from './radio'
+import YtCheckbox from './checkbox'
+import YtChart from './chart'
+import YtMap from './map'
+import YtTabs from './tabs'
 
 // 存储组件列表
 const components: {
   [propName: string]: Component
 } = {
-  TLayoutPage,
-  TLayoutPageItem,
-  TQueryCondition,
-  TTable,
-  TForm,
-  TSelect,
-  TSelectTable,
-  TDetail,
-  TButton,
-  TStepWizard,
-  TTimerBtn,
-  TModuleForm,
-  TAdaptivePage,
-  TDatePicker,
-  TRadio,
-  TCheckbox,
-  TChart,
-  // TMap,
-  TTabs
+  YtLayoutPage,
+  YtLayoutPageItem,
+  YtQueryCondition,
+  YtTable,
+  YtForm,
+  YtSelect,
+  YtSelectTable,
+  YtDetail,
+  YtButton,
+  YtStepWizard,
+  YtTimerBtn,
+  YtModuleForm,
+  YtAdaptivePage,
+  YtDatePicker,
+  YtRadio,
+  YtCheckbox,
+  YtChart,
+  YtMap,
+  YtTabs
 }
 // 插件声明：声明所有插件
 // 插件注册：在 Vue 项目的入口文件中，通过 ( app.use(插件) ) 进行注册
@@ -58,6 +58,7 @@ const installComponents: any = (app: App) => {
   // })
   for (const key in components) {
     app.component(key, components[key])
+    console.log(key)
   }
 }
 // vue插件
@@ -70,25 +71,25 @@ const install: any = (app: any, router?: any) => {
 
 // 按需引入
 export {
-  TLayoutPage,
-  TLayoutPageItem,
-  TQueryCondition,
-  TTable,
-  TForm,
-  TSelect,
-  TSelectTable,
-  TDetail,
-  TButton,
-  TStepWizard,
-  TTimerBtn,
-  TModuleForm,
-  TAdaptivePage,
-  TDatePicker,
-  TRadio,
-  TCheckbox,
-  TChart,
-  // TMap,
-  TTabs
+  YtLayoutPage,
+  YtLayoutPageItem,
+  YtQueryCondition,
+  YtTable,
+  YtForm,
+  YtSelect,
+  YtSelectTable,
+  YtDetail,
+  YtButton,
+  YtStepWizard,
+  YtTimerBtn,
+  YtModuleForm,
+  YtAdaptivePage,
+  YtDatePicker,
+  YtRadio,
+  YtCheckbox,
+  YtChart,
+  YtMap,
+  YtTabs
 }
 export default {
   // 导出的对象必须具有 install，才能被 Vue.use() 方法安装

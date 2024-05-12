@@ -21,7 +21,7 @@
         :style="{ width: tableWidth ? `${tableWidth}px` : '100%' }"
       >
         <div class="table_query_condition" v-if="isShowQuery">
-          <t-query-condition
+          <yt-query-condition
             ref="tQueryConditionRef"
             :boolEnter="false"
             @handleEvent="handleEvent"
@@ -37,7 +37,7 @@
               >{{ btnBind.btnTxt || '关闭下拉框' }}</el-button>
               <slot name="querybar"></slot>
             </template>
-          </t-query-condition>
+          </yt-query-condition>
         </div>
         <el-table
           ref="selectTable"
@@ -133,7 +133,7 @@
   </el-select>
 </template>
 
-<script setup lang="ts" name="TSelectTable">
+<script setup lang="ts" name="YTSelectTable">
 import TQueryCondition from '../../query-condition/src/index.vue'
 import RenderCol from './renderCol.vue'
 import {

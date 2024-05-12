@@ -55,7 +55,7 @@
   </component>
 </template>
 
-<script setup lang="ts" name="TSelect">
+<script setup lang="ts" name="YTSelect">
 import { computed, useSlots } from 'vue'
 const props: any = defineProps({
   modelValue: {

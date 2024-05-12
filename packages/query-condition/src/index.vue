@@ -135,7 +135,7 @@
   </el-form>
 </template>
 
-<script setup lang="ts" name="TQueryCondition">
+<script setup lang="ts" name="YTQueryCondition">
 import RenderComp from './renderComp.vue'
 import { computed, ref, watch, onMounted, reactive, toRef } from 'vue'
 const props = defineProps({

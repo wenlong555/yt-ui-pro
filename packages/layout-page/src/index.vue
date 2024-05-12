@@ -8,7 +8,7 @@
     <slot />
   </div>
 </template>
-<script setup lang="ts" name="TLayoutPage">
+<script setup lang="ts" name="YTLayoutPage">
 import { onActivated, ref } from 'vue'
 const props = defineProps({
   keepScrollDisabled: {

@@ -240,11 +240,11 @@
           </el-table-column>
         </template>
         <!-- 表头合并单元格 -->
-        <t-table-column v-else :key="index + 'm'" :item="item" :align="align" v-bind="$attrs">
+        <yt-table-column v-else :key="index + 'm'" :item="item" :align="align" v-bind="$attrs">
           <template v-for="(index, name) in slots" v-slot:[name]="data">
             <slot :name="name" v-bind="data"></slot>
           </template>
-        </t-table-column>
+        </yt-table-column>
       </template>
       <slot></slot>
       <!-- 操作按钮 -->
@@ -323,7 +323,7 @@
   </div>
 </template>
 
-<script setup lang="ts" name="TTable">
+<script setup lang="ts" name="YTTable">
 import {
   computed,
   ref,

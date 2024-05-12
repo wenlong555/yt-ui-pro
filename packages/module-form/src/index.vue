@@ -77,7 +77,7 @@
   </div>
 </template>
 
-<script setup lang="ts" name="TModuleForm">
+<script setup lang="ts" name="YTModuleForm">
 import { ref, useAttrs, useSlots, nextTick, onMounted } from 'vue'
 import type { PropType } from 'vue'
 // import { useRouter } from 'vue-router'

@@ -6,7 +6,7 @@
     <slot />
   </section>
 </template>
-<script setup lang="ts" name="TLayoutPageItem">
+<script setup lang="ts" name="YTLayoutPageItem">
 defineProps({
   isNoMargin: {
     type: Boolean,

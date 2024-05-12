@@ -18,7 +18,7 @@
   </el-radio-group>
 </template>
 
-<script setup lang="ts" name="TRadio">
+<script setup lang="ts" name="YTRadio">
 import { computed, ref } from 'vue'
 import type { PropType } from 'vue'
 import type { OptionsProps } from './radio'

@@ -13,7 +13,7 @@
   </div>
 </template>
 
-<script setup lang="ts" name="TChart">
+<script setup lang="ts" name="YTChart">
 import {
   onMounted,
   getCurrentInstance,

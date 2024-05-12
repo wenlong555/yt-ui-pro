@@ -1,0 +1,15 @@
+<template>
+  <yt-layout-page>
+    <yt-layout-page-item>
+      <yt-checkbox v-model="value" :options="options" />
+    </yt-layout-page-item>
+  </yt-layout-page>
+</template>
+<script setup lang="ts">
+import { ref } from 'vue'
+const value = ref([])
+const options = ref([
+  { label: 'Option 1', value: 1 },
+  { label: 'Option 2', value: 2 },
+])
+</script>

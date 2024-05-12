@@ -1,4 +1,4 @@
 import Form from './src/index.vue'
 import { withInstall } from '../withInstall'
-const TForm = withInstall(Form)
-export default TForm
+const YTForm = withInstall(Form)
+export default YTForm

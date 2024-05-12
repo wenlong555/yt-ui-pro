@@ -1,5 +1,5 @@
 import Map from './src/index.vue'
 import { withInstall } from '../withInstall'
 
-const TMap = withInstall(Map)
-export default TMap
+const YTMap = withInstall(Map)
+export default YTMap

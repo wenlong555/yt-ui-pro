@@ -177,7 +177,7 @@
     </div>
   </el-form>
 </template>
-<script setup lang="ts" name="TForm">
+<script setup lang="ts" name="YTForm">
 import RenderComp from './renderComp.vue'
 import { ElMessage } from 'element-plus'
 import { computed, ref, watch, onMounted, getCurrentInstance } from 'vue'

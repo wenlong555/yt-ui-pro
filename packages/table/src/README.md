@@ -1,7 +1,7 @@
 ### 1、代码示例：
 
 ```html
-<t-table
+<yt-table
   :table="table"
   :columns="table.columns"
   @size-change="handlesSizeChange"
